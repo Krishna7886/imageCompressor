@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format-Preserving Image Compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Format-Preserving Compressor</h1>
+        <p>Compresses images while keeping the original file type (JPG -> JPG, PNG -> PNG).</p>
+        
+        <input type="file" id="imageInput" accept="image/*" multiple>
+        
+        <div id="previews-container">
+            <!-- Image previews will be generated here -->
+        </div>
+        
+        <button id="downloadAllBtn" style="display: none;">Download All as ZIP</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
