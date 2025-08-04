@@ -1,0 +1,106 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #212529;
+}
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+h1 {
+    text-align: center;
+    color: #d9534f; /* A more "aggressive" color */
+}
+p {
+    text-align: center;
+    color: #495057;
+    margin-bottom: 30px;
+}
+#imageInput {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 2px dashed #d9534f;
+    border-radius: 8px;
+    background-color: #fcf8f8;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+}
+#previews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+.preview-card {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.image-box { text-align: center; }
+.image-box h2 {
+    font-size: 1.2em;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    /* Add a subtle background for transparency check */
+    background-image: linear-gradient(45deg, #eee 25%, transparent 25%), linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%), linear-gradient(-45deg, transparent 75%, #eee 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+.image-info {
+    font-size: 0.95em;
+    color: #6c757d;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+.format-info {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #0275d8;
+}
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+#downloadAllBtn {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+}
